@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Geolocation Demo</string>
+    <string name="title_location_permission">Permission required to access location services</string>
+    <string name="positive_response">Ok</string>
+    <string name="negative_response">Cancel</string>
+    <string name="permission_not_provided">GPS Permission not provided</string>
+    <string name="latitudeTV">Latitude:</string>
+    <string name="longitudeTV">Longitude:</string>
+    <string name="location_failure">Could not detect location</string>
+    <string name="rationale_location_permission">GPS permission allows us to access location data. Please enable this feature to continue using this app.</string>
 </resources>

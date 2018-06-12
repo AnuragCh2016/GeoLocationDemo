@@ -7,12 +7,40 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/latitudeTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/latitudeTV"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <TextView
+        android:id="@+id/longitudeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/longitudeTV"
+        app:layout_constraintStart_toStartOf="@+id/latitudeTV"
+        app:layout_constraintTop_toBottomOf="@+id/latitudeTV" />
+
+    <TextView
+        android:id="@+id/latValTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/latitudeTV"
+        app:layout_constraintStart_toEndOf="@+id/longitudeTV" />
+
+    <TextView
+        android:id="@+id/longValTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/longitudeTV"
+        app:layout_constraintStart_toEndOf="@+id/longitudeTV" />
 
 </android.support.constraint.ConstraintLayout>
